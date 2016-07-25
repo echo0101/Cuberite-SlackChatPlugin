@@ -49,14 +49,11 @@ function SendChat(user, msg)
   local baseUrl = "https://slack.com/api/chat.postMessage"
   local avatarBaseUrl = "https://mcapi.ca/avatar/2d/"
   local c = "curl -g \"" .. baseUrl .. "?token=" .. cConfig.apiToken .. "&channel=" .. urlencode(cConfig.channel) .. "&text=" .. urlencode(msg) .. "&as_user=false&username=" .. urlencode(user)  .. "&icon_url=" .. urlencode(avatarBaseUrl .. user) .. "\""
-  LOG(c)
   local t = os.execute(c)
-  LOG(t)
   return false
 end
 
 function OnChat(Player, Message)
   SendChat(Player:GetName(), StripColorCodes(Message))
-
   return false
 end
