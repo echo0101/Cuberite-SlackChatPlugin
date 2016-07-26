@@ -1,0 +1,6 @@
+{
+  "name": "Cuberite-slackchatplugin",
+  "tagline": "A plugin to integrate chats in Cuberite to Slack.",
+  "body": "# Cuberite-SlackChatPlugin\r\nA plugin to integrate chats in Cuberite to Slack.\r\n\r\n## Notes\r\n* This is a quick hack to get in-game chats to appear in a Slack channel. \r\n* This plugin has only been tested on Linux. It requires curl so it likely won't work on Windows unless curl is installed.\r\n\r\n## Installation\r\n1. Create channel and a Slack bot: https://my.slack.com/services/new/bot (add the bot to the channel)\r\n2. Download the plugin to Plugins/SlackChat\r\n3. Add configuration in Cuberite root directory: SlackChat.ini\r\n\r\n```\r\n[SlackChat]\r\napiToken=(insert your api token from step #1)\r\nchannel=#minecraft\r\n```\r\n\r\nFeel free to make improvements/suggestions!\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
